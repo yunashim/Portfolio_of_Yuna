@@ -58,10 +58,20 @@ header {
 
 /* header 끝/ 본문 시작 --------------------------------------------------------------------------  */
 
-.MainGif {
+/* .MainGif {
     width: 100%;
     height: 92vh;
     position: relative;
     display: flex;
     top:8vh;
+} */
+
+.section1 {
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    display: flex;
+    top:8vh;
+    /* border: red solid 1px; */
+    background-color: red;
 }
