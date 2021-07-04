@@ -62,23 +62,6 @@ header {
     font-family: 'Bona Nova';
 }
 
-.backgroundsolgan {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    border: blue 2px solid;
-    color: blueviolet;
-}
-
-/* .backgroundsolgan p {
-    font-size: 230px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;;
-    color:white;
-} */
-
 .solganwrap {
     display: flex;
     position: absolute;
