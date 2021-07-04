@@ -46,6 +46,6 @@ header {
 }
 
 .header-btns :hover {
-    background-color: rgba(190, 190, 190, 0.466);
-    color: white;
+    color: goldenrod;
+    transform: scale(1.1);
 }
