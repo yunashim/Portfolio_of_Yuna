@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Bona Nova';
+    src: url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section1 {
+    width: 100%;
+    height: 92vh;
+    top: 8vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed_img {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 92vh;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: darkseagreen 2px solid;
+}
+
+.blackimg {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.blackimg >img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.white_Box {
+    height: 100vh;
+    width: 100vw;
+}
+
+#section2 {
+    /* background-color: ; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
