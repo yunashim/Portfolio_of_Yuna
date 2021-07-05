@@ -10,11 +10,17 @@ body {
     font-style: normal;
 }
 
+
+/* header 속성 변환 -------------------------------------- */
+
 .header-btns :hover {
     color: black;
     transform: scale(1.1);
     background-color: rgba(218, 165, 32, 0.836);
 }
+
+
+/* section1 ------------------------------------------------ */
 
 .section1 {
     display: flex;
@@ -25,6 +31,9 @@ body {
     justify-content: center;
     z-index: 1;
 }
+
+
+/* section 1 자식요소 -1 / img------------------------------------ */
 
 .fixed_img {
     display: flex;
@@ -77,7 +86,7 @@ body {
 }
 
 
-/* moto ------------------------------------------- */
+/* section 1 자식요소 - 2 / moto ------------------------------- */
 
 .motowrap {
     display: flex;
@@ -97,9 +106,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 550px;
-    height: 230px;
-    border: #5b943f 4px solid;
-    background-color: #5b943f5b;
+    height: 250px;
+    background-color: #396873;
 }
 
 .my_moto {
@@ -126,7 +134,7 @@ body {
     cursor: pointer;
     transform: scale(1.1);
     background-size: 100% 100%;
-    background-image: linear-gradient(transparent 70%, #5b943f 40%);
+    background-image: linear-gradient(transparent 70%, #263959 40%);
 }
 
 .motodescription {
@@ -150,12 +158,18 @@ body {
     /* border: deeppink 2px solid; */
 }
 
+
+/* white box ----------------------------------------------*/
+
 .white_box {
     display: flex;
     height: 100vh;
     width: 47%;
     z-index: 99;
 }
+
+
+/* section 2 ----------------------------------------------- */
 
 .section2 {
     position: relative;
@@ -174,4 +188,81 @@ body {
     height: 100%;
     width: 100%;
     background-color: goldenrod;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Bona Nova';
+}
+
+.texttitle {
+    display: flex;
+    font-size: 50px;
+    position: relative;
+    align-items: center;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 4px -2px rgba(0, 0, 0, 0.548);
+    color: rgba(0, 0, 0, 0.815);
+    width: 380px;
+    height: 100px;
+    left: 16px;
+    /* border: blueviolet 2px solid; */
+}
+
+.textwrap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 380px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 40px;
+    left: 20px;
+    /* border: springgreen 2px solid; */
+}
+
+.lefttextbox {
+    display: flex;
+    width: 100px;
+    height: 150px;
+    /* border: plum 2px solid; */
+}
+
+.lefttextbox>ul {
+    list-style: none;
+    padding-left: 0px;
+    font-weight: 700;
+}
+
+.detailinfobox {
+    display: flex;
+    width: 280px;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.452);
+    /* border: blue 2px solid; */
+}
+
+.instagramtext {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.detailinfobox>ul {
+    list-style: none;
+    padding-left: 0px;
+    font-style: italic;
+}
+
+.detailinfobox>ul :hover {
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
 }
