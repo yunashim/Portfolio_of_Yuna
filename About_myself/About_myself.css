@@ -13,7 +13,6 @@ body {
 /* 기본 세팅 끝 :) 본문 시작 -------------------------------- */
 
 .section1 {
-    z-index: -10;
     display: flex;
     position: fixed;
     align-items: center;
@@ -44,31 +43,106 @@ body {
 .circularimg {
     display: flex;
     position: relative;
+    left: -100px;
+    top: -30px;
+    /* border: slateblue solid 2px; */
 }
 
 .circularimg>img {
-    width: 550px;
-    height: 0px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
 }
+
+
+/* 이미지 끝, 텍스트 시작 --------------- */
+
+.titletext {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    text-align: right;
+    font-family: 'Bona Nova';
+    width: 500px;
+    height: 250px;
+    color: white;
+    right: -50px;
+    line-height: 60px;
+    z-index: 100;
+    /* border: purple 2px solid; */
+}
+
+.text1 {
+    display: flex;
+    text-align: right;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 400;
+    /* border: salmon 2px solid; */
+}
+
+.text2 {
+    display: flex;
+    text-align: right;
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /* border: green 2px solid; */
+}
+
+.text3 {
+    display: flex;
+    text-align: right;
+    margin: 0px;
+    margin-top: 24px;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 1s;
+    /* border: turquoise 2px solid; */
+}
+
+.text3>span {
+    color: goldenrod;
+}
+
+.text3:hover {
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 60%, goldenrod 40%);
+}
+
+.text3:hover span {
+    cursor: pointer;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
+/* section 1 끝 / section 2 시작 ------------------------------------------ */
 
 .box {
     height: 100vh;
     width: 100%;
-    /* background-color: ; */
 }
 
 .section2 {
+    display: flex;
+    position: relative;
     background-color: orangered;
     height: 200vh;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section3 {
     display: flex;
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: goldenrod;
