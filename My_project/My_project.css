@@ -2,6 +2,13 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Bona Nova';
+    src: url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .section1 {
     height: 100vh;
     width: 100vw;
@@ -11,65 +18,60 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Bona Nova';
+    text-align: center;
 }
 
-    .name {
-        margin: auto;
-        font-size: 100px;
-        font-weight: bolder;
-        height: 1.2em;
-        line-height: 1.2em;
-        overflow: hidden;
-    }
+.name {
+    margin: auto;
+    font-size: 100px;
+    font-weight: bolder;
+    line-height: 1.2em;
+    overflow: hidden;
+    width: 900px;
+    height: 150px;
+}
 
-        .name_ul {
-            margin-top: 0;
-            animation-name: Textrolling;
-            animation-duration: 3.5s;
-            animation-iteration-count: infinite;
-            animation-direction: reverse;
-        }
+.name_ul {
+    margin-top: 0;
+    animation-name: Textrolling;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    text-align: right;
+}
 
-        .name_txt {
-            list-style-type: none;
-            color: white;
-        }
+.name_txt {
+    list-style-type: none;
+    width: 100%;
+    height: 150px;
+    color: black;
+    text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 1px 0 goldenrod, 0 -1px goldenrod;
+}
 
 .box {
     height: 100vh;
     width: 100%;
     /* background-color: ; */
 }
-    
-.section2 {
-    background-color: orangered;
-    height: 200vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#Text_Box {
+    background-color: blue;
+    border-radius: 20px;
+    background: #333333;
+    box-shadow: 20px 20px 40px #262626, -20px -20px 40px #404040;
+    width: 70vw;
+    height: 70vh;
 }
 
-    #Text_Box {
-        background-color: blue;
-        border-radius: 20px;
-        background: #333333;
-        box-shadow: 20px 20px 40px #262626,
-                    -20px -20px 40px #404040;
-        width: 70vw;
-        height: 70vh;
-    }
+#Text_Box:hover {
+    background: linear-gradient(145deg, #2e2e2e, #373737);
+}
 
-        #Text_Box:hover {
-            background: linear-gradient(145deg, #2e2e2e, #373737);
-        }
-
-        #Text_Box:active {
-            background: #333333;
-            box-shadow: inset 20px 20px 40px #262626,
-                        inset -20px -20px 40px #404040;
-        }
+#Text_Box:active {
+    background: #333333;
+    box-shadow: inset 20px 20px 40px #262626, inset -20px -20px 40px #404040;
+}
 
 .section3 {
     display: flex;
@@ -78,25 +80,22 @@ body {
     background-color: goldenrod;
 }
 
+
 /* Animation */
 
-@keyframes Textrolling{
+@keyframes Textrolling {
     0% {
         transform: translateY(0);
     }
-
     25% {
         transform: translateY(-33%);
     }
-
     50% {
         transform: translateY(-33%);
     }
-
     75% {
         transform: translateY(-66%);
     }
-
     100% {
         transform: translateY(-66%);
     }
