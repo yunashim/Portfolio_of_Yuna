@@ -184,6 +184,16 @@ body {
     line-height: 1.2rem;
 }
 
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20%;
+}
+
 .leftbox {
     display: flex;
     position: relative;
@@ -197,6 +207,10 @@ body {
     color: white;
     width: 270px;
     height: 350px;
+    background-image: url(../img/About_myself\ 2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.678);
 }
 
 .centerbox {
@@ -212,6 +226,9 @@ body {
     color: white;
     width: 270px;
     height: 350px;
+    background-image: url(../img/About-myself\ 2-2.jpg);
+    background-repeat: none;
+    background-size: cover;
 }
 
 .rightbox {
@@ -227,6 +244,9 @@ body {
     color: white;
     width: 270px;
     height: 350px;
+    background-image: url(../img/About-myself\ 2-3.jpg);
+    background-repeat: none;
+    background-size: cover;
 }
 
 
