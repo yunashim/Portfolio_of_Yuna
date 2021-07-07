@@ -141,28 +141,209 @@ body {
 .section2 {
     display: flex;
     position: relative;
-    border-top: white double 5px;
-    border-bottom: white double 5px;
-    background-color: rgb(2, 5, 19);
+    background-color: black;
+    border-top: goldenrod double 5px;
+    border-bottom: goldenrod double 5px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
+}
+
+.outlinewrap {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    /* border: red 2px solid; */
+    font-family: 'Bona Nova';
+}
+
+.maintitle {
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    /* border: springgreen 2px solid; */
+    top: 10px;
+}
+
+.maincontents2 {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 130px;
+    font-size: 14px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    line-height: 1.2rem;
+}
+
+.leftbox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px 10px 40px rgb(68, 68, 68), -10px -10px 40px rgb(68, 68, 68), -10px 10px 40px rgb(68, 68, 68), 10px -10px 40px rgb(68, 68, 68);
+    border-radius: 20%;
+    background-color: black;
+    color: white;
+    width: 270px;
+    height: 350px;
+}
+
+.centerbox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px 10px 40px rgb(68, 68, 68), -10px -10px 40px rgb(68, 68, 68), -10px 10px 40px rgb(68, 68, 68), 10px -10px 40px rgb(68, 68, 68);
+    border-radius: 20%;
+    background-color: black;
+    color: white;
+    width: 270px;
+    height: 350px;
+}
+
+.rightbox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20%;
+    background-color: black;
+    box-shadow: 10px 10px 40px rgb(68, 68, 68), -10px -10px 40px rgb(68, 68, 68), -10px 10px 40px rgb(68, 68, 68), 10px -10px 40px rgb(68, 68, 68);
+    color: white;
+    width: 270px;
+    height: 350px;
+}
+
+
+/* section 2 끝/ section 3 시작 --------------------------- */
+
+.section3 {
+    display: flex;
+    position: relative;
+    border-top: goldenrod double 5px;
+    /* border-bottom: white double 5px; */
+    background: black;
+    width: 100%;
+    height: 110vh;
     justify-content: center;
     align-items: center;
 }
 
 .lightblubimg {
-    border: blue 2px solid;
-    display: flex;
-    /* position: fixed; */
-    width: 720px;
-    height: 720px;
-    opacity: 0.5;
-}
-
-.section3 {
     display: flex;
     position: relative;
+    object-fit: cover;
+    opacity: 0.5;
+    width: 600px;
+    height: 600px;
+    /* left: -450px;
+    bottom: -80px; */
+    /* border: blue 2px solid; */
+}
+
+.textwrap {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
-    background-color: goldenrod;
+    height: 300px;
+    /* background-color: black; */
+    /* border: tomato 2px solid; */
+}
+
+.inlinetextwrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 870px;
+    height: 300px;
+    right: -10px;
+    /* border: turquoise 2px solid; */
+}
+
+.lefttextbox {
+    display: flex;
+    position: relative;
+    font-family: 'Bona Nova';
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+    /* border: thistle 2px solid; */
+}
+
+.textscroll {
+    margin: auto;
+    font-size: 70px;
+    font-weight: bolder;
+    height: 1.2em;
+    line-height: 1.2em;
+    overflow: hidden;
+    /* border: red 2px solid; */
+}
+
+.whatIlike_ul {
+    margin-top: 0;
+    animation-name: Textrolling;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    text-align: right;
+}
+
+.whatIlike_txt {
+    list-style-type: none;
+    color: black;
+    text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 1px 0 goldenrod, 0 -1px goldenrod;
+}
+
+.righttextbox {
+    display: flex;
+    position: relative;
+    font-family: 'Bona Nova';
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+    /* border: thistle 2px solid; */
+}
+
+
+/* CSS Animation --------------------------------------- */
+
+@keyframes Textrolling {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20%);
+    }
+    40% {
+        transform: translateY(-40%);
+    }
+    60% {
+        transform: translateY(-60%);
+    }
+    80% {
+        transform: translateY(-80%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }
