@@ -269,6 +269,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Bona Nova';
+    background-image: url(../img/About-myself-gif-Mydream.gif);
+    background-size: cover;
 }
 
 .textwrap2 {
@@ -308,13 +310,26 @@ body {
     /* border: palegreen 2px solid; */
     padding-left: 20px;
     padding-right: 10px;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.mtext3 {
+    display: flex;
+    position: relative;
+    /* border: palegreen 2px solid; */
+    padding-left: 20px;
+    color: white;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -px white;
 }
 
 .mtext2:hover {
     cursor: pointer;
-    background-color: goldenrod;
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 1px 0 goldenrod, 0 -1px goldenrod;
+}
+
+.mtext3:hover {
+    color: goldenrod;
 }
 
 .throughit {
